@@ -15,7 +15,7 @@
 
     <groupId>yulikexuan.spring.cloud</groupId>
     <artifactId>spring-cloud-parent</artifactId>
-    <version>2020.04.01</version>
+    <version>2020.04.02</version>
 
     <packaging>pom</packaging>
 
@@ -44,11 +44,20 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <mapstruct.version>1.4.1.Final</mapstruct.version>
+        <spring-cloud.version>Hoxton.SR8</spring-cloud.version>
     </properties>
 
     <dependencyManagement>
 
         <dependencies>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
 
             <dependency>
                 <groupId>org.hibernate.validator</groupId>
@@ -225,6 +234,12 @@
         <dependency>
             <groupId>org.awaitility</groupId>
             <artifactId>awaitility</artifactId>
+        </dependency>
+
+        <!-- Spring Cloud -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
     </dependencies>
