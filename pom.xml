@@ -15,7 +15,7 @@
 
     <groupId>yulikexuan.spring.cloud</groupId>
     <artifactId>spring-cloud-parent</artifactId>
-    <version>2020.04.04</version>
+    <version>2020.04.05</version>
 
     <packaging>pom</packaging>
 
@@ -250,6 +250,12 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+            <version>6.4</version>
         </dependency>
 
     </dependencies>
