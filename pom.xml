@@ -15,7 +15,7 @@
 
     <groupId>yulikexuan.spring.cloud</groupId>
     <artifactId>spring-cloud-parent</artifactId>
-    <version>2020.04.05</version>
+    <version>2020.04.06</version>
 
     <packaging>pom</packaging>
 
@@ -237,6 +237,7 @@
         </dependency>
 
         <!-- Spring Cloud Dependencies-->
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
@@ -256,6 +257,13 @@
             <groupId>net.logstash.logback</groupId>
             <artifactId>logstash-logback-encoder</artifactId>
             <version>6.4</version>
+        </dependency>
+
+        <!-- Spring Security - Encryption & Decryption Dependency-->
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-rsa</artifactId>
         </dependency>
 
     </dependencies>
