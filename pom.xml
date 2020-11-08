@@ -7,19 +7,14 @@
     <modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>yulikexuan.spring.cloud</groupId>
-		<artifactId>spring-cloud-bom</artifactId>
-		<version>2020.04.11</version>
+        <groupId>yulikexuan.spring.cloud</groupId>
+        <artifactId>spring-cloud-bom</artifactId>
+        <version>2020.04-SNAPSHOT</version>
 		<relativePath />
 	</parent>
 
     <artifactId>spring-cloud-parent</artifactId>
-
     <packaging>pom</packaging>
-    
-    <properties>
-        <hibernate-validator.version>6.1.6.Final</hibernate-validator.version>
-    </properties>
 
     <dependencyManagement>
 
